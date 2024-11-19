@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTotalIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receitas: R$ 0.00"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tvTotalExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Despesas: R$ 0.00"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btnAddTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Transação"
+        android:layout_below="@id/tvTotalIncome"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Definir Orçamento"
+        android:layout_below="@id/btnAddTransaction"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configurações"
+        android:layout_below="@id/btnBudget"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>
+

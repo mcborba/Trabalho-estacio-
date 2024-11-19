@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/budgetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/category_prompt"/>
+
+    <EditText
+        android:id="@+id/etBudgetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor do Orçamento"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnSetBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Definir Orçamento"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
+
